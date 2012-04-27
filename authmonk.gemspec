@@ -4,9 +4,9 @@ require File.expand_path('../lib/authmonk/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Alif Rachmawadi"]
   gem.email         = ["subosito@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Mountable authentication (devise + mongoid_roles)}
+  gem.summary       = %q{Rails engine for authentication. Using devise and mongoid_roles.}
+  gem.homepage      = "https://github.com/subosito/authmonk"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
