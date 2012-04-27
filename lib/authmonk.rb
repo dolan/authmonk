@@ -1,5 +1,2 @@
-require "authmonk/version"
-
-module Authmonk
-  # Your code goes here...
-end
+require 'authmonk/engine'
+require 'authmonk/version'
