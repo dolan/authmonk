@@ -36,8 +36,6 @@ module Authmonk
 
     attr_accessible     :email,
                         :password,
-                        :password_confirmation,
-                        :first_name,
-                        :last_name
+                        :password_confirmation
   end
 end

@@ -1,6 +1,6 @@
 # Authmonk
 
-TODO: Write a gem description
+Mountable rails authentication based on devise. Currently using mongoid.
 
 ## Installation
 
@@ -12,18 +12,23 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Mount Authmonk engine by edit `config/routes.rb` on your application:
 
-    $ gem install authmonk
+    mount Authmonk::Engine => '/'
 
-## Usage
+Create custom devise initializer, `config/initializers/devise.rb`:
 
-TODO: Write usage instructions here
+    Devise.setup do |config|
+      config.mailer_sender = "accounts@awesomeapp.com"
+    end
 
-## Contributing
+Optionally, You can also extend `Authmonk::User` for your convenience. say `app/models/user.rb`:
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    class User < Authmonk::User
+    end
+
+## Participation
+
+FEPR: Fork, Edit, Pull Request!
+
+
