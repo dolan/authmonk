@@ -1,6 +1,7 @@
 module Authmonk
   class User
     include Mongoid::Document
+    include Mongoid::Roles::Subject
 
     devise              :database_authenticatable,
                         :registerable,

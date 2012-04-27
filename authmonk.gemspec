@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'devise', '>= 2.0.0'
   gem.add_dependency 'bson_ext'
   gem.add_dependency 'mongoid', '>= 2.4.0'
+  gem.add_dependency 'mongoid_roles'
 end
